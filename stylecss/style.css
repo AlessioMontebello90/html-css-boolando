@@ -1,0 +1,59 @@
+/* GENERICS */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100px;
+    background-color:#ff6900 ;
+
+}
+
+img{
+    width: 100%;
+}
+
+
+/* UTILS */
+
+.flex{
+    display: flex;
+}
+
+/* CARDS */
+
+.shop-card{
+    width: 250px;
+    height: 450px;
+}
+
+span{
+    text-decoration: line-through;
+}
+
+h2{
+    font-size: 0.75rem;
+    font-weight: bolder;
+}
+
+p{
+    color: red;
+    font-weight: bold;
+}
+
+.prices{
+    display: inline;
+}
+
+/* DEBUG */
+.debug{
+    border-style: dashed ;
+    border-color: black; 
+}
+
+
+
+
