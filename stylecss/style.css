@@ -7,13 +7,24 @@
 }
 
 .container{
-    height: 100px;
-    background-color:#ff6900 ;
-
+    max-width: 1180px;
+    margin: auto auto;
+    padding: 10px auto;
 }
 
-img{
-    width: 100%;
+.logo{
+    width: 140px;
+   
+}
+
+header{
+padding: 10px;
+background-color:#ff6900 ;
+color: white;
+}
+
+main{
+    padding-top: 40px;
 }
 
 
@@ -23,35 +34,57 @@ img{
     display: flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
+.between{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align-items{
+    align-items: center;
+}
+
+
 /* CARDS */
 
 .shop-card{
-    width: 250px;
+    width: calc(100% /3);
     height: 450px;
 }
 
-span{
-    text-decoration: line-through;
-}
-
-h2{
+h3{
     font-size: 0.75rem;
     font-weight: bolder;
 }
 
-p{
+.price{
     color: red;
     font-weight: bold;
 }
 
-.prices{
-    display: inline;
+.discount-price{
+    text-decoration: line-through;
 }
 
+img{
+    width: 100%;
+}
+
+.img-card{
+    width: 100%;
+    height: 500px;
+}
+
+
+
 /* DEBUG */
+
+
 .debug{
-    border-style: dashed ;
-    border-color: black; 
+    border: 2px dashed black;
 }
 
 
