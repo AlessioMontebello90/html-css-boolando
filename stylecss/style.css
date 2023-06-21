@@ -106,10 +106,31 @@ h3{
 /* FOOTER */
 
 footer{
+    width: 100%;
+    padding: 30px 0;
+    margin-top: 60px
+    ;
     background-color: #1a1a1a;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer h3{
+    font-size: 1.4rem;
     color: white;
-    min-height: 90px;
-    margin-top: 40px;
+    font-weight: 700;
+    padding: 10px;
+}
+footer ul{
+    list-style-type: none;
+    font-size: 1.25rem;
+    display: flex;
+}
+
+footer ul li a i{
+    font font-size: 2rem;
 }
 
 
