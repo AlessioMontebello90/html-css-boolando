@@ -1,148 +1,205 @@
 /* GENERICS */
-
-*{
+* {
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
-}
+    margin: 0;
+  }
+  body {
+    margin-top: 80px;
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+  
+  .container {
+    max-width: 1400px;
+    margin: 10px auto;
+  }
+  
+  main .container {
+    padding: 20px 0px;
+  }
+  
+  .row {
+    margin: auto -10px;
+  }
+  header img,
+  .header-donna img,
+  .header-uomini img {
+    max-width: 150px;
+  }
+  .img-card > img {
+    width: 100%;
+    display: block;
+  }
+  
+ /* UTILITIES */
 
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.container{
-    max-width: 1180px;
-    margin: auto auto;
-}
-
-header .container{
-    padding: 10px auto;
-}
-
-.logo{
-    width: 140px;
-   
-}
-
-header{
-padding: 10px;
-background-color:#ff6900 ;
-color: white;
-}
-
-main{
-    padding-top: 40px;
-}
-
-h3{
-    margin-top: 20px;
-}
-
-
-/* UTILS */
-
-.flex{
+  .flex {
     display: flex;
-}
-
-.wrap{
-    flex-wrap: wrap;
-}
-
-.between{
+  }
+  .between {
     justify-content: space-between;
+  }
+  .align-items {
     align-items: center;
-}
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .relative {
+    position: relative;
+  }
 
-.align-items{
-    align-items: center;
-}
+  /* HEADER */
 
-
+  header {
+    background-color: #ff6900;
+    color: white;
+    padding: 5px 0px;
+    box-shadow: 0px 0px 8px 0.5px #1a1a1a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
+  
+  .gens *,
+  .profile * {
+    padding-right: 0.2rem;
+    cursor: pointer;
+  }
+  
 /* CARDS */
 
-.shop-card{
-    width:  calc(100% / 3 - 20px);
+  .card {
+    width: calc(100% / 3 - 20px);
     margin: 10px;
-}
-
-.img-card{
-    width: 100%;
-    height: 500px;
-
-}
-
-.img-card img{
-   width: 100%;
-   height: 100%;
-}
-
-
-
-.discount-price{
-    color: red;
-}
-
-.price{
-    text-decoration: line-through;
-}
-
-.relative{
-    position: relative;
-}
-
-.img-1b{
+  }
+  .img-card {
+    margin-bottom: 0.2rem;
+    cursor: pointer;
+  }
+  
+  .img-card:hover .img-1 {
+    
+    opacity: 0;
+  }
+  .img-card:hover .fa-heart {
+    transform: rotate(10deg) scale(1.1);
+  }
+  .img-card:hover .z-up-card {
+    transform: scale(1.1);
+  }
+  
+  .fa-heart:hover {
+    color: #ff0000;
+  }
+  
+  .img-2 {
     position: absolute;
     top: 0px;
     left: 0px;
     z-index: -1;
-    
-    
-}
-
-.img-card:hover .img-1{
-    display: none;
-}
-
-/* FOOTER */
-
-footer{
-    width: 100%;
-    padding: 30px 0;
-    margin-top: 60px
-    ;
-    background-color: #1a1a1a;
-
+  }
+  .img-1 {
+    left: 0px;
+    right: 0px;
+    transition: all 0.5s ease;
+  }
+  .brand,
+  .price {
+    font-weight: normal;
+  }
+  .price {
+    text-decoration: line-through;
+  }
+  .discount-price {
+    color: red;
+  }
+ 
+  .z-up-card {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer h3{
-    font-size: 1.4rem;
+    position: absolute;
+    bottom: 10%;
+    left: 0%;
+  }
+  .discount,
+  .sostenibily {
+    margin-right: 10px;
+    padding: 3px 8px;
     color: white;
-    font-weight: 700;
-    padding: 10px;
-}
-footer ul{
-    list-style-type: none;
-    font-size: 1.25rem;
-    display: flex;
-}
+    box-shadow: 1px 1px 1px 1px #1a1a1abc;
+    z-index: 2;
+  }
+  .discount {
+    background-color: #ff0000;
+  }
+  .sostenibily {
+    background-color: #008000;
+  }
+  main .img-card > .fa-heart {
+    position: absolute;
+    right: -10px;
+    top: 15px;
+    padding: 8px 16px;
+    box-shadow: 1px 1px 1px 1px #1a1a1abc;
+    z-index: 2;
+    background-color: white;
+    transition: all 0.3s ease-in;
+  }
 
-footer ul li a i{
-    font font-size: 2rem;
-}
+  /* FOOTER */
+  
+  footer {
+    background-color: #1a1a1a;
+    color: rgb(255, 255, 255);
+    padding: 20px 0;
+  }
+  footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-right: 0.5rem;
+  }
+  footer i {
+    padding-right: 0.6rem;
+    cursor: pointer;
+  }
+  .margin-footer {
+    margin-bottom: 0.5rem;
+  }
 
 
-
-/* DEBUG */
-
-
-.debug{
+  /* DEBUG */
+  
+  .debug {
     border: 2px dashed black;
-}
-
-
-
+  }
+  .debug .container {
+    background-color: rgba(0, 255, 255, 0.509);
+    border: 2px dashed black;
+  }
+  .debug img {
+    background-color: azure;
+    border: 2px dashed black;
+  }
+  .debug .profile {
+    background-color: azure;
+    border: 2px dashed black;
+  }
+  .debug .gens {
+    background-color: azure;
+    border: 2px dashed black;
+  }
+  .debug .card {
+    background-color: blanchedalmond;
+    border: 2px dashed black;
+  }
+  
+  .debug .img-card {
+    background-color: blue;
+    border: 2px dashed black;
+  }
+  
 
